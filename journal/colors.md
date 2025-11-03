@@ -21,7 +21,8 @@
 
 alright so what you see above is the hex code for code.org.
 
-these next 2 images were taken from me. the 2nd one is a screenshot.
+these next 2 images were taken from me. the 2nd one is a screenshot. 
+
 ![digital picture](/1journal.jpg)
 
 </p>
