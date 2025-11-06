@@ -4,7 +4,7 @@
 	<title>markdown journal</title>
 </head>
 <body>
-	<p>
+	
 0A
 0A
 04
@@ -25,7 +25,6 @@ these next 2 images were taken from me. the 2nd one is a screenshot.
 
 ![digital picture](/1journal.png)
 
-</p>
 </body>
 </html>
 
