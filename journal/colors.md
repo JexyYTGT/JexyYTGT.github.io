@@ -18,11 +18,12 @@
 
 alright so what you see above is the hex code for code.org.
 
+teacher says this assignment is a 100% so yay.
+
 these next 2 images were taken from me. first one is a screenshot. 
 
 ![digital picture](1journal.png)
 ![digital picture](2journal.jpg)
 
 
-chris says this is a 100% so this a 100% yay. man coding is hard
 
