@@ -4,7 +4,7 @@ GCTAA ITD 110 is basically a web design class. Right now I'm just typing random 
 
 You can find the website to my class at: https://ict.gctaa.net/f25/courses/itd110/index.html
 
-You can find my personal website at: https://jexyytgt.github.io/
+You can find my website at: https://jexyytgt.github.io/
 
 I might update this readme file and my website later but for now this is what I have.
 
