@@ -1,4 +1,4 @@
-# JexyYTGT.github.io
+# the link is litterly JexyYTGT.github.io
 
 ## this repo is for a class
 
