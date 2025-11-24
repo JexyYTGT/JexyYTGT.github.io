@@ -1,6 +1,6 @@
-#JexyYTGT.github.io
+# JexyYTGT.github.io
 
-##this repo is for a class
+## this repo is for a class
 
 GCTAA ITD 110 is what this repo is for.
 
