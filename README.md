@@ -1,12 +1,9 @@
-# JexyYTGT.github.io
-## This repo is for a class called GCTAA ITD 110
-GCTAA ITD 110 is basically a web design class. Right now I'm just typing random stuff and practicing stuff. Yeah. 
+#JexyYTGT.github.io
+##this repo is for a class
+GCTAA ITD 110 is what this repo is for.
+the main "hub" of web development at my school: https://ict.gctaa.net/
+my class's website: https://ict.gctaa.net/f25/courses/itd110/index.html
+my website: https://jexyytgt.github.io/
 
-You can find the website to my class at: https://ict.gctaa.net/f25/courses/itd110/index.html
-
-You can find my website at: https://jexyytgt.github.io/
-
-I might update this readme file and my website later but for now this is what I have.
-
-what i usually mostly do for this repo is for  class, but usually at home i'd just mess around with this repo. 
-
+**follow me on instagram**
+username: **prith.va**
