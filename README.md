@@ -1,5 +1,5 @@
-# the link is litterly JexyYTGT.github.io
-
+# the link is literally JexyYTGT.github.io
+## put it directly in your browser
 ## this repo is for a class
 
 GCTAA ITD 110 is what this repo is for.
