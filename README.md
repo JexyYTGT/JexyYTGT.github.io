@@ -1,5 +1,5 @@
-# the link is literally JexyYTGT.github.io
-## put it directly in your browser
+#search up JexyYTGT.github.io
+##firefox recomended if you have blockers on chrome and safari
 
 GCTAA ITD 110 is what this repo is for.
 
