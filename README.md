@@ -1,4 +1,4 @@
-# search up JexyYTGT.github.io directly
+# search up jexyytgt.github.io directly
 
 ## firefox recomended
 
