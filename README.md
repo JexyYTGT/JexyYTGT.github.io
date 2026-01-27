@@ -1,5 +1,2 @@
-# search up jexyytgt.github.io directly
-
-## firefox recomended
-
-my website: https://jexyytgt.github.io/
+#search up jexyytgt.github.io directly
+or click on this: https://jexyytgt.github.io/
