@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+        <head>
+                <title> THis is a canvas</title>
+        <style>
+        canvas{
+                border: black 1px solid;
+        }
+        </style>
+        </head>
+        <body>
+                <h1> this is a canvas</h1>
+                <canvas id ="canvas" width="800" height ="800>
+                </canvas>
+                <script>
+                const canvas = document.getElementByID("canvas");
+                const ctx = canvas.getContext("2d");
+                //Draw a green rectangle
+                ctx.fillStyle = "green"
+                ctx.fillRect(100,100,200,300);
+                </script>
+        </body>
+</html>
+
