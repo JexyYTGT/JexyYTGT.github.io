@@ -27,6 +27,22 @@
 <a href=https://google.com target="_blank" rel="noopener no referrer">google</a>
 <p>click above for google</p>
 
+ <canvas id="myCanvas" width=800 height=800>
+                </canvas>
+                <script>
+                        const canvas = document.getElementById("myCanvas");
+                        const ctx = canvas.getContext("2d");
+                        let x = 1;
+                        function animate(){
+                        x = x + 1; // = means assignment
+                                   // not "solve for x"
+                        ctx.clearRect(0,0,800,800);
+                        ctx.fillRect(x,100,100,100);
+                        console.log(x);
+                        requestAnimationFrame(animate);
+                        }
+                        animate();
+                </script>
 
 </body>
 
