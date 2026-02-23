@@ -2,8 +2,8 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 //scale because it looks better-
-//ctx.translate(40, 40); // recenter after scaling
-//ctx.scale(0.8, 0.8);
+ctx.translate(40, 40); // recenter after scaling
+ctx.scale(2, 2);
 
 ctx.lineWidth = 2;
 ctx.strokeStyle = "black";
