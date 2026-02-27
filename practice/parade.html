@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animation</title>
+    <style>
+    canvas{
+        border: 1px black solid;
+    }
+    </style>
+    </head>
+    <body>
+        <canvas id="myCanvas" width=800 height=800
+        </canvas>
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            let x = 1;
+            let x2 = 1;
+            let speed = 5;
+            let time = 0;
+            function animate(){
+                time = time + 1;
+                
+                if (time < 160) {
+                //early, move x
+                     x = x + speed; // = means assignment
+                           // not "solve for x"
+                }
+                //later, move x2
+                if (time > 160) {
+                    x2 = x2 + speed;
+                }
+                /*
+                if (x > 800) {
+                    x = 0;
+                }
+                if (x2 > 800) {
+                    x2 = 0;
+                }
+                */
+                //clear
+                ctx.fillStyle = "red";
+                ctx.clearRect(0,0,800,800);
+                //draw
+                ctx.fillRect(x,100,10,10);
+                ctx.fillStyle = "green";
+                ctx.fillRect(x2,50,10,10);
+                //animate again
+                requestAnimationFrame(animate);
+            }
+            animate();
+        </script>
+    </body>
+</html> 
+
