@@ -1,10 +1,10 @@
 ight bro here's what you need to know:
 
-title: supa strikas
+#title: supa strikas
 
 setting: your playing at MetLife Stadium in New Jersey, since it's the 2026 Fifa Wolrd Cup Final against Argentina! Guess what as well!
 
-Your playing as Cristiano Ronaldo trying to bring his country to peace!
+**Your playing as Cristiano Ronaldo, working hard and hard and hard to win for his country, Portugal!
 
 map coming later
 
