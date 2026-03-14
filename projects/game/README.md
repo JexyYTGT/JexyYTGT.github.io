@@ -12,13 +12,10 @@ You are **Cristiano Ronaldo**, age 41, playing your last chance to win the World
 ---
 
 ## Map of Locations
+coming soon!
 
-```mermaid
-graph TD
-    Start --> LockerRoom
-    LockerRoom --> Tunnel
-    Tunnel --> Field
-    Field --> Shoot
-    Field --> ArgentinaAttack
-    Shoot --> Field
-    ArgentinaAttack --> Field
+# Global Variables:
+
+**portugalScore** - Tracks Portugal’s goals during the final; used to determine if the player wins.
+
+**argentinaScore** - Tracks Argentina’s goals during the final; used to determine if the player loses.
