@@ -1,8 +1,9 @@
-# Supa Strikas!
+# Title
+## Supa Strikas!e
 
-## Title
-**Supa Strikas!**
+#https://jexyytgt.github.io/projects/game/
 
+Play my game by copy and pasting the URL  above!
 ---
 
 ## Setting
