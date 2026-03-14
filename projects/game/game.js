@@ -143,4 +143,18 @@ function endGame() {
     } else {
         print("Argentina wins the World Cup. Better luck next time...");
     }
-}
+function endGame() {
+    gameOver = true; // stops further input
+    print("\n--- FULL-TIME ---");
+    print(`Final Score: Portugal ${portugalScore} - Argentina ${argentinaScore}`);
+
+    if (portugalScore > argentinaScore) {
+        print("Portugal wins the World Cup! You made history!");
+    } else if (portugalScore === argentinaScore) {
+        print("It's a tie! The match goes to penalties (not implemented in this demo).");
+    } else {
+        print("Argentina wins the World Cup. Better luck next time...");
+    }
+
+    print("🎉 You finished the game! 🎉");
+}}
