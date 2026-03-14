@@ -1,6 +1,6 @@
 const output = document.getElementById("output");
 const inputBox = document.getElementById("user-input");
-let gameOver = false; // new flag
+let gameOver = false; // stops input after match ends
 
 function print(text){
     const line = document.createElement("div");
@@ -24,10 +24,12 @@ inputBox.addEventListener("keydown", function(event){
     }
 });
 
+// default handler
 function handleInput(input) {
     console.log("No handler for input: " + input);
 }
 
+// override this in game.js
 function waitForInput(handlerFunction){
     handleInput = handlerFunction;
 }
