@@ -52,7 +52,7 @@ function tunnel() {
     waitForInput(processInput);
 }
 
-// Main Field (first try)
+// Main Field
 function field() {
     if (triesLeft === 3) {
         print("Kick-off! First attempt starts in 45+3 minutes.");
@@ -111,12 +111,11 @@ function argentinaAttack() {
     nextTurn();
 }
 
-// Handle next turn / halftime logic
+// Handle next turn / halftime
 function nextTurn() {
     triesLeft--;
 
     if (triesLeft === 2) {
-        // Halftime after first try
         print("\n--- HALF-TIME ---");
         print("Press anything to continue to the second half.");
         function processInput(input) {
@@ -133,18 +132,7 @@ function nextTurn() {
 
 // End of the match
 function endGame() {
-    print("\n--- FULL-TIME ---");
-    print(`Final Score: Portugal ${portugalScore} - Argentina ${argentinaScore}`);
-
-    if (portugalScore > argentinaScore) {
-        print("Portugal wins the World Cup! You made history!");
-    } else if (portugalScore === argentinaScore) {
-        print("It's a tie! The match goes to penalties (not implemented in this demo).");
-    } else {
-        print("Argentina wins the World Cup. Better luck next time...");
-    }
-function endGame() {
-    gameOver = true; // stops further input
+    gameOver = true;
     print("\n--- FULL-TIME ---");
     print(`Final Score: Portugal ${portugalScore} - Argentina ${argentinaScore}`);
 
@@ -157,4 +145,4 @@ function endGame() {
     }
 
     print("🎉 You finished the game! 🎉");
-}}
+}
