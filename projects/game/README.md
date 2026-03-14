@@ -1,11 +1,24 @@
-#title: Supa Strikas!
+# Supa Strikas!
 
-Setting: your playing at MetLife Stadium in New Jersey, since it's the 2026 Fifa Wolrd Cup Final against Argentina! Guess what as well!
+## Title
+**Supa Strikas!**
 
-**Your playing as Cristiano Ronaldo, working hard and hard and hard to win for his country, Portugal!**
+---
 
-Map coming later
+## Setting
+You are playing at **MetLife Stadium in New Jersey**, during the **2026 FIFA World Cup Final** against **Argentina**.  
+You are **Cristiano Ronaldo**, age 41, playing your last chance to win the World Cup for **Portugal**, your team, your fans, and your country. The stadium is roaring with fans, and the atmosphere is intense.  
 
-summary: Playing as the most beloveded soccer player in the world, you must bring the prestigious Wolrd Cup home! and well, your 41. It is your last chance to win the cup for not just for you, but your team, your friends, your people, your country, your fans, and make history!
+---
 
-Variables coming later
+## Map of Locations
+
+```mermaid
+graph TD
+    Start --> LockerRoom
+    LockerRoom --> Tunnel
+    Tunnel --> Field
+    Field --> Shoot
+    Field --> ArgentinaAttack
+    Shoot --> Field
+    ArgentinaAttack --> Field
