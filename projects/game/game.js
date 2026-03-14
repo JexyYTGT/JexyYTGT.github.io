@@ -1,26 +1,31 @@
+// Global variables
 let portugalScore = 0;
 let argentinaScore = 0;
+let triesLeft = 3; // total tries for the match
 
-function start(){
+function start() {
     print("Supa Strikas!");
     print("Portugal vs Argentina in the World Cup Final.");
+    print("You are Cristiano Ronaldo, age 41, playing your last chance to win.");
     print("Press anything to begin.");
 
-    function processInput(input){
+    function processInput(input) {
         lockerRoom();
     }
 
     waitForInput(processInput);
 }
 
-function lockerRoom(){
-    print("You are in the locker room.");
+// Locker Room
+function lockerRoom() {
+    print("You are in the locker room preparing for the match.");
+    print("Your teammates look nervous but ready.");
     print("Type 'tunnel' to go to the tunnel.");
 
-    function processInput(input){
-        if(input.toLowerCase() === "tunnel"){
+    function processInput(input) {
+        if (input.toLowerCase() === "tunnel") {
             tunnel();
-        } else{
+        } else {
             stayHere();
             waitThenCall(lockerRoom);
         }
@@ -29,14 +34,16 @@ function lockerRoom(){
     waitForInput(processInput);
 }
 
-function tunnel(){
-    print("You stand in the tunnel.");
-    print("Type 'field' to start the match.");
+// Tunnel
+function tunnel() {
+    print("You stand in the tunnel. The crowd is roaring outside.");
+    print("Argentina players are stretching on the other side.");
+    print("Type 'field' to walk onto the pitch.");
 
-    function processInput(input){
-        if(input.toLowerCase() === "field"){
+    function processInput(input) {
+        if (input.toLowerCase() === "field") {
             field();
-        } else{
+        } else {
             stayHere();
             waitThenCall(tunnel);
         }
@@ -45,20 +52,26 @@ function tunnel(){
     waitForInput(processInput);
 }
 
-function field(){
-    print("Score: Portugal " + portugalScore + " - Argentina " + argentinaScore);
-    print("Type 'shoot' or 'pass'.");
+// Main Field (first try)
+function field() {
+    if (triesLeft === 3) {
+        print("Kick-off! First attempt starts in 45+3 minutes.");
+        print("The whistle blows, the stadium is on fire!");
+    } else {
+        print(`Score: Portugal ${portugalScore} - Argentina ${argentinaScore}`);
+        print(`You have ${triesLeft} tries left to beat Argentina.`);
+    }
 
-    function processInput(input){
+    print("Type 'shoot' to take a shot or 'pass' to play safe.");
+
+    function processInput(input) {
         input = input.toLowerCase();
 
-        if(input === "shoot"){
+        if (input === "shoot") {
             shoot();
-        }
-        else if(input === "pass"){
+        } else if (input === "pass") {
             argentinaAttack();
-        }
-        else{
+        } else {
             stayHere();
             waitThenCall(field);
         }
@@ -67,28 +80,67 @@ function field(){
     waitForInput(processInput);
 }
 
-function shoot(){
-    print("You shoot!");
-
-    if(Math.random() < 0.5){
-        portugalScore++;
-        print("GOAL FOR PORTUGAL!");
-    } else{
-        print("Missed!");
+// Shooting
+function shoot() {
+    if (triesLeft === 3) {
+        print("You sprint and take a shot in added time...");
+    } else {
+        print(`Attempt #${4 - triesLeft}: you see the goal and strike!`);
     }
 
-    field();
+    if (Math.random() < 0.5) {
+        portugalScore++;
+        print("GOAL FOR PORTUGAL! The fans erupt in celebration!");
+    } else {
+        print("Missed! The goalkeeper dives and saves it!");
+    }
+
+    nextTurn();
 }
 
-function argentinaAttack(){
-    print("Argentina attacks!");
-
-    if(Math.random() < 0.4){
+// Argentina Attack
+function argentinaAttack() {
+    print("Argentina launches a dangerous counterattack!");
+    if (Math.random() < 0.4) {
         argentinaScore++;
-        print("Argentina scores!");
-    } else{
-        print("Portugal defends!");
+        print("Argentina scores! The stadium goes quiet for a moment...");
+    } else {
+        print("Portugal defends well! You clear the ball safely.");
     }
 
-    field();
+    nextTurn();
+}
+
+// Handle next turn / halftime logic
+function nextTurn() {
+    triesLeft--;
+
+    if (triesLeft === 2) {
+        // Halftime after first try
+        print("\n--- HALF-TIME ---");
+        print("Press anything to continue to the second half.");
+        function processInput(input) {
+            print("Second half begins! You have 2 tries to beat Argentina.");
+            field();
+        }
+        waitForInput(processInput);
+    } else if (triesLeft > 0) {
+        field();
+    } else {
+        endGame();
+    }
+}
+
+// End of the match
+function endGame() {
+    print("\n--- FULL-TIME ---");
+    print(`Final Score: Portugal ${portugalScore} - Argentina ${argentinaScore}`);
+
+    if (portugalScore > argentinaScore) {
+        print("Portugal wins the World Cup! You made history!");
+    } else if (portugalScore === argentinaScore) {
+        print("It's a tie! The match goes to penalties (not implemented in this demo).");
+    } else {
+        print("Argentina wins the World Cup. Better luck next time...");
+    }
 }
