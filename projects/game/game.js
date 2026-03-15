@@ -139,10 +139,10 @@ function endGame() {
     if (portugalScore > argentinaScore) {
         print("Portugal wins the World Cup! You made history!");
     } else if (portugalScore === argentinaScore) {
-        print("It's a tie! The match goes to penalties (not implemented in this demo).");
+        print("It's a tie! The match goes to penalties (penalties never coming haha).");
     } else {
         print("Argentina wins the World Cup. Better luck next time...");
     }
 
-    print("🎉 You finished the game! 🎉");
+    print(" You finished the game! Refresh to play again!");
 }
