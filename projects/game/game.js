@@ -2,11 +2,11 @@
 let portugalScore = 0;
 let argentinaScore = 0;
 let triesLeft = 3; // total tries for the match
-
+let gameOver = false;
 function start() {
     print("Supa Strikas!");
     print("Portugal vs Argentina in the World Cup Final.");
-    print("You are Cristiano Ronaldo who's age 41, playing your last chance to win the world cup.");
+    print("You are Cristiano Ronaldo who is 41 years old, You are also playing your last chance to win the world cup.");
     print("press any key to begin.");
 
     function processInput(input) {
@@ -16,10 +16,16 @@ function start() {
     waitForInput(processInput);
 }
 
+//StayHere
+function stayHere() {
+    print("That doesn't work. Try something else.");
+}
+
+
 // Locker Room
 function lockerRoom() {
     print("You're in the  locker room preparing for the match.");
-    print("Your teammates look nervous but ready. (go rafael leao, bernando silvia, bruno fernandes, vintinha, nuno mendes, and more 1st team portugal players)");
+    print("Your teammates look nervous but ready. (go Rafael Leao, Bernando Silvia, Bruno Fernandes, Vintinha, Nuno Mendes, and more 1st team portugal players)");
     print("Type 'tunnel' to go to the tunnel.");
 
     function processInput(input) {
@@ -36,7 +42,7 @@ function lockerRoom() {
 
 // Tunnel
 function tunnel() {
-    print("You stand in the tunnel. You walk with your team and beside the Argentinian players. You hear crowd is chanting Ronaldo and Messi outside.");
+    print("You stand in the tunnel. You walk with your team and beside the Argentinian players. You hear the crowd  chanting Ronaldo and Messi outside.");
     print("After some time, Argentinian players are stretching on the other side.");
     print("Type 'field' to walk onto the pitch (field).");
 
@@ -56,7 +62,7 @@ function tunnel() {
 function field() {
     if (triesLeft === 3) {
         print("Kick-off! After about 45 minutes, the ref decidied to add 3 minute extra overtime! The ball passes to you.  First attempt starts now!.");
-        print("What do you do, future Wolrd Cup Winner?)");
+        print("What do you do, future Wolrd Cup Winner?");
     } else {
         print(`Score: Portugal ${portugalScore} - Argentina ${argentinaScore}`);
         print(`You have ${triesLeft} tries left to beat Argentina.`);
