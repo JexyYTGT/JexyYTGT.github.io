@@ -1,14 +1,15 @@
+// game.js
 // Global variables
 let portugalScore = 0;
 let argentinaScore = 0;
 let triesLeft = 3; // total tries for the match
 
-//start
+// Start the game
 function start() {
     print("Supa Strikas!");
     print("Portugal vs Argentina in the World Cup Final.");
-    print("You are Cristiano Ronaldo who is 41 years old, You are also playing your last chance to win the world cup.");
-    print("press any key to begin.");
+    print("You are Cristiano Ronaldo who is 41 years old, playing your last chance to win the World Cup.");
+    print("Press any key to begin.");
 
     function processInput(input) {
         lockerRoom();
@@ -17,16 +18,10 @@ function start() {
     waitForInput(processInput);
 }
 
-//StayHere
-function stayHere() {
-    print("That doesn't work. Try something else.");
-}
-
-
 // Locker Room
 function lockerRoom() {
-    print("You're in the  locker room preparing for the match.");
-    print("Your teammates look nervous but ready. (go Rafael Leao, Bernando Silvia, Bruno Fernandes, Vintinha, Nuno Mendes, and more 1st team portugal players)");
+    print("You're in the locker room preparing for the match.");
+    print("Your teammates look nervous but ready. (Rafael Leao, Bernardo Silva, Bruno Fernandes, Vintinha, Nuno Mendes, and more 1st team Portugal players)");
     print("Type 'tunnel' to go to the tunnel.");
 
     function processInput(input) {
@@ -62,8 +57,8 @@ function tunnel() {
 // Main Field
 function field() {
     if (triesLeft === 3) {
-        print("Kick-off! After about 45 minutes, the ref decidied to add 3 minute extra overtime! The ball passes to you. First attempt starts now!.");
-        print("What do you do, future Wolrd Cup Winner?");
+        print("Kick-off! After about 45 minutes, the ref decided to add 3 minutes of extra time! The ball passes to you. First attempt starts now!");
+        print("What do you do, future World Cup Winner?");
     } else {
         print(`Score: Portugal ${portugalScore} - Argentina ${argentinaScore}`);
         print(`You have ${triesLeft} tries left to beat Argentina.`);
@@ -99,7 +94,7 @@ function shoot() {
         portugalScore++;
         print("GOAL FOR PORTUGAL! The stadium is so loud it hurts your ears!");
     } else {
-        print("Missed! The goalkeeper dives and saves it! (we know we all hate Martinez.)");
+        print("Missed! The goalkeeper dives and saves it! (we all hate Martinez)");
     }
 
     nextTurn();
@@ -110,9 +105,9 @@ function argentinaAttack() {
     print("Argentina launches a dangerous counterattack!");
     if (Math.random() < 0.4) {
         argentinaScore++;
-        print("Argentina scores! The stadium screams so loud you have to cover your ears! (But it's not your fans that are screaming...)");
+        print("Argentina scores! The stadium screams so loud you have to cover your ears! (Not your fans screaming...)");
     } else {
-        print("Portugal defends well! You defend a opposing midfielder's cross!");
+        print("Portugal defends well! You stop an opposing midfielder's cross!");
     }
 
     nextTurn();
@@ -151,6 +146,5 @@ function endGame() {
         print("Argentina wins the World Cup. Better luck next time...");
     }
 
-    print(" You finished the game! Refresh to play again!");
+    print("You finished the game! Refresh to play again!");
 }
-
