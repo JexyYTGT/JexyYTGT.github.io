@@ -6,8 +6,8 @@ let triesLeft = 3; // total tries for the match
 function start() {
     print("Supa Strikas!");
     print("Portugal vs Argentina in the World Cup Final.");
-    print("You are Cristiano Ronaldo, age 41, playing your last chance to win.");
-    print("Press anything to begin.");
+    print("You are Cristiano Ronaldo who's age 41, playing your last chance to win the world cup.");
+    print("press any key to begin.");
 
     function processInput(input) {
         lockerRoom();
@@ -18,8 +18,8 @@ function start() {
 
 // Locker Room
 function lockerRoom() {
-    print("You are in the locker room preparing for the match.");
-    print("Your teammates look nervous but ready.");
+    print("You're in the  locker room preparing for the match.");
+    print("Your teammates look nervous but ready. (go rafael leao, bernando silvia, bruno fernandes, vintinha, nuno mendes, and more 1st team portugal players)");
     print("Type 'tunnel' to go to the tunnel.");
 
     function processInput(input) {
@@ -36,9 +36,9 @@ function lockerRoom() {
 
 // Tunnel
 function tunnel() {
-    print("You stand in the tunnel. The crowd is roaring outside.");
-    print("Argentina players are stretching on the other side.");
-    print("Type 'field' to walk onto the pitch.");
+    print("You stand in the tunnel. You walk with your team and beside the Argentinian players. You hear crowd is chanting Ronaldo and Messi outside.");
+    print("After some time, Argentinian players are stretching on the other side.");
+    print("Type 'field' to walk onto the pitch (field).");
 
     function processInput(input) {
         if (input.toLowerCase() === "field") {
@@ -55,8 +55,8 @@ function tunnel() {
 // Main Field
 function field() {
     if (triesLeft === 3) {
-        print("Kick-off! First attempt starts in 45+3 minutes.");
-        print("The whistle blows, the stadium is on fire!");
+        print("Kick-off! After about 45 minutes, the ref decidied to add 3 minute extra overtime! The ball passes to you.  First attempt starts now!.");
+        print("What do you do, future Wolrd Cup Winner?);
     } else {
         print(`Score: Portugal ${portugalScore} - Argentina ${argentinaScore}`);
         print(`You have ${triesLeft} tries left to beat Argentina.`);
@@ -90,9 +90,9 @@ function shoot() {
 
     if (Math.random() < 0.5) {
         portugalScore++;
-        print("GOAL FOR PORTUGAL! The fans erupt in celebration!");
+        print("GOAL FOR PORTUGAL! The stadium is so loud it hurts your ears!");
     } else {
-        print("Missed! The goalkeeper dives and saves it!");
+        print("Missed! The goalkeeper dives and saves it! (we know we all hate Martinez.");
     }
 
     nextTurn();
@@ -103,9 +103,9 @@ function argentinaAttack() {
     print("Argentina launches a dangerous counterattack!");
     if (Math.random() < 0.4) {
         argentinaScore++;
-        print("Argentina scores! The stadium goes quiet for a moment...");
+        print("Argentina scores! The stadium screams so loud you have to cover your ears! (But it's not your fans that are screaming...)");
     } else {
-        print("Portugal defends well! You clear the ball safely.");
+        print("Portugal defends well! You defend a opposing midfielder's cross!");
     }
 
     nextTurn();
