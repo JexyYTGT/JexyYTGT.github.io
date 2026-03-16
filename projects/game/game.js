@@ -154,5 +154,3 @@ function endGame() {
     print(" You finished the game! Refresh to play again!");
 }
 
-
-start();
