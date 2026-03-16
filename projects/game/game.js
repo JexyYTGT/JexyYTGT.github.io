@@ -56,7 +56,7 @@ function tunnel() {
 function field() {
     if (triesLeft === 3) {
         print("Kick-off! After about 45 minutes, the ref decidied to add 3 minute extra overtime! The ball passes to you.  First attempt starts now!.");
-        print("What do you do, future Wolrd Cup Winner?);
+        print("What do you do, future Wolrd Cup Winner?)");
     } else {
         print(`Score: Portugal ${portugalScore} - Argentina ${argentinaScore}`);
         print(`You have ${triesLeft} tries left to beat Argentina.`);
