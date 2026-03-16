@@ -42,7 +42,7 @@ function lockerRoom() {
 
 // Tunnel
 function tunnel() {
-    print("You stand in the tunnel. You walk with your team and beside the Argentinian players. You hear the crowd  chanting Ronaldo and Messi outside.");
+    print("You stand in the tunnel. You walk with your team and beside the Argentinian players. You hear the crowd chanting Ronaldo and Messi outside.");
     print("After some time, Argentinian players are stretching on the other side.");
     print("Type 'field' to walk onto the pitch (field).");
 
@@ -61,7 +61,7 @@ function tunnel() {
 // Main Field
 function field() {
     if (triesLeft === 3) {
-        print("Kick-off! After about 45 minutes, the ref decidied to add 3 minute extra overtime! The ball passes to you.  First attempt starts now!.");
+        print("Kick-off! After about 45 minutes, the ref decidied to add 3 minute extra overtime! The ball passes to you. First attempt starts now!.");
         print("What do you do, future Wolrd Cup Winner?");
     } else {
         print(`Score: Portugal ${portugalScore} - Argentina ${argentinaScore}`);
@@ -98,7 +98,7 @@ function shoot() {
         portugalScore++;
         print("GOAL FOR PORTUGAL! The stadium is so loud it hurts your ears!");
     } else {
-        print("Missed! The goalkeeper dives and saves it! (we know we all hate Martinez.");
+        print("Missed! The goalkeeper dives and saves it! (we know we all hate Martinez.)");
     }
 
     nextTurn();
