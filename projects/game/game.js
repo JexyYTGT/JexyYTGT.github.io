@@ -3,7 +3,7 @@ let portugalScore = 0;
 let argentinaScore = 0;
 let triesLeft = 3; // total tries for the match
 
-
+//start
 function start() {
     print("Supa Strikas!");
     print("Portugal vs Argentina in the World Cup Final.");
