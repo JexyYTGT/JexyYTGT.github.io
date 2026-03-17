@@ -10,7 +10,7 @@ function start() {
     print("Portugal vs Argentina in the World Cup Final.");
     print("You are Cristiano Ronaldo who is 41 years old, playing your last chance to win the World Cup.");
     print("Press any key to begin.");
-start();
+
     function processInput(input) {
         drinkChoice();
     }
