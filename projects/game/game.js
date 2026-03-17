@@ -4,7 +4,6 @@ let portugalScore = 0;
 let argentinaScore = 0;
 let triesLeft = 3; // total tries for the match
 
-print("test change 2")
 // Start the game
 function start() {
     print("Supa Strikas!");
@@ -113,8 +112,10 @@ function shoot() {
     if (triesLeft === 3) {
         print("You sprint and take a shot in added time...");
     } else {
+	print("-------------------------------------------------------")
         print(`Attempt #${4 - triesLeft}: you see the goal and strike!`);
-    }
+	print("-------------------------------------------------------")
+	}
 
     if (Math.random() < 0.5) {
         portugalScore++;
