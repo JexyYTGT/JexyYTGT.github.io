@@ -1,4 +1,3 @@
-// game_helpers.js
 const output = document.getElementById("output");
 const inputBox = document.getElementById("user-input");
 
