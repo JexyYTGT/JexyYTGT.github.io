@@ -4,7 +4,7 @@ let portugalScore = 0;
 let argentinaScore = 0;
 let triesLeft = 3; // total tries for the match
 
-print("test change1")
+print("test change 2")
 // Start the game
 function start() {
     print("Supa Strikas!");
@@ -23,15 +23,17 @@ function drinkChoice() {
     print("Before heading to the locker room, you stop by a table with drinks.");
     print("You can choose between Gatorade or Water.");
     print("Type 'gatorade' or 'water'.");
-
-    function processInput(input) {
+    
+	function processInput(input) {
         input = input.toLowerCase();
 
         if (input === "gatorade") {
-            print("You grab the Gatorade. You're feeling energized for the match!");
+            print("You grab the Gatorade. You take a sip and feel energized, ready to take on whatevers gonna happen!");
+		print("-------------------------------------------")
             lockerRoom();
         } else if (input === "water") {
-            print("You take the water. Staying calm and focused.");
+            print("You take the water. It's cold at the perfect temperature. Now thats a good drink!");
+		print ("-------------------------------------------")
             lockerRoom();
         } else {
             stayHere();
