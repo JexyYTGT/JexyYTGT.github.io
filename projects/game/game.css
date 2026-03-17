@@ -1,4 +1,3 @@
-//here is game 
 body {
     margin: 0;
     padding: 20px;
@@ -39,7 +38,6 @@ h1{
     font-size: 16px;
     white-space: pre-wrap;
     word-wrap: break-word;
-    color: white;
 }
 
 #input-line {
