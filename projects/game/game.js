@@ -12,7 +12,30 @@ function start() {
     print("Press any key to begin.");
 
     function processInput(input) {
-        lockerRoom();
+        drinkChoice();
+    }
+
+    waitForInput(processInput);
+}
+//Drink Choice
+function drinkChoice() {
+    print("Before heading to the locker room, you stop by a table with drinks.");
+    print("You can choose between Gatorade or Water.");
+    print("Type 'gatorade' or 'water'.");
+
+    function processInput(input) {
+        input = input.toLowerCase();
+
+        if (input === "gatorade") {
+            print("You grab the Gatorade. You're feeling energized for the match!");
+            lockerRoom();
+        } else if (input === "water") {
+            print("You take the water. Staying calm and focused.");
+            lockerRoom();
+        } else {
+            stayHere();
+            waitThenCall(drinkChoice);
+        }
     }
 
     waitForInput(processInput);
