@@ -11,7 +11,7 @@ You are **Cristiano Ronaldo**, age 41, playing your last chance to win the World
 ---
 
 ## Map of Locations (UPDATED!)
-![updatedMap](mypic.png)
+![updatedMap](map.png)
 
 # Global Variables:
 
