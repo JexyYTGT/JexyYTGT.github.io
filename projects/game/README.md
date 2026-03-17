@@ -1,4 +1,4 @@
-# Supa Strikas!
+# Supa Strikas: The Last Dance
 # https://jexyytgt.github.io/projects/game/
 
 Play my game by copy and pasting the URL  above!
