@@ -4,6 +4,7 @@ let portugalScore = 0;
 let argentinaScore = 0;
 let triesLeft = 3; // total tries for the match
 
+print("test change1")
 // Start the game
 function start() {
     print("Supa Strikas!");
